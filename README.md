@@ -55,6 +55,7 @@ xgboost
 ```
 ### Run test.py to check if the install succeed
 ```shell
+cd ai-modules/src/codes
 python test.py
 ```
 if the install succeed, it should be show a result like this
