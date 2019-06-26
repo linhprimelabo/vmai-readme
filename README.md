@@ -2,28 +2,28 @@
 
 ## Open-pose setup
 Clone the origin open tf-pose project  
-'''shell
+```shell
 git clone https://www.github.com/ildoonet/tf-openpose
-'''
+```
 Install requirements  
-'''shell
+```shell
 cd tf-openpose
 pip install -r requirements.txt
-'''
+```
 
 install swig  
 
-'''shell
+```shell
 apt install swig
-'''
+```
 
-'''shell
+```shell
 cd tf_pose/pafprocess
 swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
-'''
+```
 
-'''shell
+```shell
 cd ../..
 python setup.py install
-'''
+```
 
