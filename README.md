@@ -37,7 +37,8 @@ test
 cd ../../..
 python run.py --model=mobilenet_thin --resize=432x368 --image=./images/p1.jpg
 ```
-##V-mai project
+
+## V-mai project
 ### Requirements
 ```
 scikit-learn
