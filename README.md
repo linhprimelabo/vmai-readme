@@ -1,38 +1,38 @@
 # v-mai-reforming-fashion-retail
 
 ## Open-pose setup
-Clone the origin open tf-pose project  
+### Clone the origin open tf-pose project  
 ```shell
 git clone https://www.github.com/ildoonet/tf-openpose
 ```
-Install requirements  
+### Install requirements  
 ```shell
 cd tf-openpose
 pip install -r requirements.txt
 ```
 
-install swig  
+### install swig  
 
 ```shell
 apt install swig
 ```
-
+cd to pafprocess folder and buid c++ lib for processing
 ```shell
 cd tf_pose/pafprocess
 swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
 ```
-
+cd to tf-openpose folder and install package for later use.
 ```shell
 cd ../..
 python setup.py install
 ```
-
+cd to cmu folder and download tensorflow graph file
 ```shell
 cd models/graph/cmu
 bash download.sh
 ```
-
-test  
+### test
+cd to tf-openpose folder and run the test demo
 ```shell
 cd ../../..
 python run.py --model=mobilenet_thin --resize=432x368 --image=./images/p1.jpg
