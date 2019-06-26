@@ -53,3 +53,9 @@ pickle
 lightgbm
 xgboost
 ```
+### Run test.py to check if the install succeed
+```shell
+python test.py
+```
+if the install succeed, it should be show a result like this
+![fin-result](test_result.png)
