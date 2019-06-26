@@ -1,6 +1,7 @@
 # v-mai-reforming-fashion-retail
 
-## Open-pose setup
+## 1. Open-pose setup
+![openpose](https://github.com/ildoonet/tf-pose-estimation/blob/master/etcs/openpose_macbook_mobilenet3.gif?raw=true)
 ### Clone the origin open tf-pose project  
 ```shell
 git clone https://www.github.com/ildoonet/tf-openpose
@@ -37,8 +38,9 @@ cd to tf-openpose folder and run the test demo
 cd ../../..
 python run.py --model=mobilenet_thin --resize=432x368 --image=./images/p1.jpg
 ```
-
-## V-mai project
+The result should be like this
+![demo-pose](https://github.com/ildoonet/tf-pose-estimation/blob/master/etcs/inference_result2.png)
+## 2. V-mai project
 ### Requirements
 ```
 scikit-learn
